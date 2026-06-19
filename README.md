@@ -99,6 +99,7 @@
 
 ```python
 scale_pos_weight = len(y[y==0]) / len(y[y==1])  # = 15.42
+```
 
 **Почему это сработало**
 
@@ -117,7 +118,7 @@ scale_pos_weight = len(y[y==0]) / len(y[y==1])  # = 15.42
 ```python
 gkf = GroupKFold(n_splits=5)
 for train_idx, val_idx in gkf.split(X, y, groups=groups):
-    ...
+```
 
 ### Результат валидации
 
